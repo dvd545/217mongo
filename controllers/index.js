@@ -15,7 +15,7 @@ exports.houses = function(req, res){
 
 };
 
-/** var statedata = require('../models/state');
+ var statedata = require('../models/state');
 
 exports.index = function(req, res) {
     var stateid = "CA";
@@ -28,7 +28,7 @@ exports.index = function(req, res) {
     });
 };
 
-/*exports.index = function(req, res) {
+exports.index = function(req, res) {
   var course = new Course();
       course.cid = 'IS 117';
       course.title = 'Introduction to Building Websites';
@@ -42,4 +42,4 @@ exports.index = function(req, res) {
       courses: courses 
     });
  });
-}*/
+}

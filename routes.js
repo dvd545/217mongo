@@ -5,6 +5,7 @@ var courses = require('./controllers/courses');
 var passport = require('passport');
 var users = require('./controllers/users');
 var admin = require('./controllers/admin');
+var houses = require('./controllers/houses');
 //var assignments = require('./controllers/assignments');
 
   app.get('/', index.index);
@@ -12,8 +13,8 @@ var admin = require('./controllers/admin');
   app.get('/courses', courses.list);
   app.get('/api/courses', courses.jsonlist);
   app.get('/courses/:cid', courses.findById);
-  app.get('/hunger, hunger.list');
-  app.get('/hunger, hunger.jsonlist');
+  app.get('/houses, houses.list');
+  app.get('/api/houses, houses.jsonlist');
   app.post('/courses/add', courses.add);
   app.post('/courses/update/:cid', courses.update);
 

@@ -1,4 +1,4 @@
-/**var mongoose = require('mongoose')
+/*var mongoose = require('mongoose')
     , house = mongoose.model('house');
 
 exports.list = function(req, res) {
@@ -12,10 +12,11 @@ exports.list = function(req, res) {
     });
 }
 
-/**
 exports.jsonlist = function(req, res) {
 
     house.find({}, function(err, houses) {
         res.send(houses);
     });
-}**/
+}
+
+    */

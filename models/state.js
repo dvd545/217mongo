@@ -1,4 +1,4 @@
-/**  var mongoose = require('mongoose');
+  var mongoose = require('mongoose');
 
 exports.statelist = function statelist(state, callback){
     var statedata = mongoose.model('statedata');
@@ -11,4 +11,4 @@ exports.statelist = function statelist(state, callback){
         }
 
     })
-}; **/
+};
