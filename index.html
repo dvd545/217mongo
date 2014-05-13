@@ -28,14 +28,14 @@
         <table width="100%" cellspacing="0" cellpadding="8" >
             <tr bgcolor="#000000">
                 <td>
-                    <h4 style="color:#ffffff">Visualizing MongoDB Objects in Concept and Practice Sample Code</h4>
+                    <h4 style="color:#ffffff">Real Estate Transactions In Sacramento</h4>
                 </td>
             </tr>
             <tr>
                 <td align="center">
                     <table cellspacing="2" cellpadding="3" width="100%">
                         <tr style="border-bottom-width: 1px; border-bottom-style:dotted; border-bottom-color:#DADADA;">
-                            <td bgcolor="#FFFFDB" width="50%"><h4>Simple Google Maps JavaScript API Example</h4></td>
+                            <td bgcolor="#FFFFDB" width="50%"><h4>Google Maps API</h4></td>
                         </tr>
                         <tr>
                             <td>
@@ -57,7 +57,6 @@
             </tr>
         </table>
     </div>
-</div>
 </body>
 </html>
 
@@ -71,7 +70,7 @@
 
     function runQuery()
     {
-        var queryUrl = "http://localhost:8000/json/USDC_25_Records.json";
+        var queryUrl = "http://localhost:8000/json/housing.json";
 
         if (queryUrl.length > 0) {
             $.ajax({
@@ -102,13 +101,15 @@
         document.body.appendChild(script);
     }
 
+
+
     // initializeMap -
     function initializeMap() {
         // Create the Map object and set the type, zoom level, and
         // location to center the map on by latitude and longitude
         var mapOptions = {
             zoom: 11,
-            center: new google.maps.LatLng( 38.8364, -77.4262 ),
+            center: new google.maps.LatLng( 38.5556, -121.4689 ),
             mapTypeId: google.maps.MapTypeId.ROADMAP
         };
         map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
@@ -120,7 +121,7 @@
                 var marker = new google.maps.Marker({
                     map: map,
                     position: new google.maps.LatLng( locations[i].latitude , locations[i].longitude ),
-                    title: convertToTitleCase(locations[i].search_field)
+                    title: convertToTitleCase(locations[i].city)
                 });
             }
         }
@@ -131,4 +132,6 @@
     function convertToTitleCase(str) {
         return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
     }
+
 </script>
+
